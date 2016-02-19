@@ -14,6 +14,9 @@
 
     <link rel="shortcut icon" href="img/favicon.ico">
 
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+    <script type="text/javascript" src="js/master.js"></script>
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -21,7 +24,7 @@
       <script src="js/vendor/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
+  <body ng-app="jam" ng-controller="MainCtrl">
 
     <div class="container">
       <div class="col-xs-12">
@@ -30,7 +33,7 @@
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-01">
               <span class="sr-only">Toggle navigation</span>
             </button>
-            <a class="navbar-brand" href="#">Hall of Fame 7</a>
+            <a class="navbar-brand" href="#">HOF7 Game Jam</a>
           </div>
           <div class="collapse navbar-collapse" id="navbar-collapse-01">
             <ul class="nav navbar-nav navbar-right">
@@ -38,81 +41,57 @@
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Teams <b class="caret"></b></a>
                 <span class="dropdown-arrow"></span>
                 <ul class="dropdown-menu">
-                  <li><a href="#teamBlank">[Blank]</a></li>
-                  <li><a href="#">Guarians of the Realm</a></li>
-                  <li><a href="#">Underrated Vow</a></li>
-                  <li><a href="#">Left Over's</a></li>
-                  <li><a href="#">Yes, Kurtis</a></li>
+                  <li ng-repeat="project in projects"><a href="#{{project.id}}">{{project.teamName}}</a></li>
                 </ul>
               </li>
-              <li><a href="#fakelink">About</a></li>
              </ul>
 
           </div><!-- /.navbar-collapse -->
         </nav><!-- /navbar -->
         <div class="col-xs-12">
-          <h1>Game Jam</h1>
+          <div class="">
+
+
+          <h1>Game Jam for Cerebral Palsy</h1>
           <p>
-            Full Sail 48 Game The theme of our game jam we are working with the Conductive Education Center of Orlando (CECO)
+            The Gaming Industry recognizes the need to be inclusive of gamers with disabilities and physical and cognitive difficulties. Full Sail is proud to help advance this awareness by working with the Conductive Education Center of Orlando (CECO) to challenge five teams to develop a game within 48 hours targeted at Students at CECO with Cerebral Palsy and other motor disabilities.
           </p>
-          <!-- <img src="http://halloffame.fullsail.edu/assets/images/HOFSocialShare.jpg" alt="example-image" class="img-rounded img-responsive"> -->
+          </div>
         </div>
-        <div class="col-xs-12" id="teamBlank">
-          <h3>Project U.S.O.R</h3>
+        <div ng-repeat="project in projects" class="col-xs-12" id="{{project.id}}">
+          <h3>{{project.projectTitle}} - </h3>
           <div class="col-md-8">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/IY8_ucCmQbs" frameborder="0" allowfullscreen></iframe>
+            <youtube-video width="560" height="315" video-id="project.youTubeID"></youtube-video>
+
           </div>
           <aside class="col-md-4">
             <div class="todo">
               <div class="todo-search" style="">
-              Team [Blank]
+              Team {{project.teamName}}
               </div>
               <ul>
-                <li>
+                <li ng-repeat="member in project.members">
                   <div class="todo-icon fui-user"></div>
                   <div class="todo-content">
                     <h4 class="todo-name">
-                      Joe Slater
+                      {{member.name}}
                     </h4>
-                    Audio Engineer
-                  </div>
-                </li>
-                <li>
-                  <div class="todo-icon fui-user"></div>
-                  <div class="todo-content">
-                    <h4 class="todo-name">
-                      Rebecca Carroll
-                    </h4>
-                      3d Animator
+                      {{member.role}}
                   </div>
                 </li>
               </ul>
             </div><!-- /.todo -->
             <p>
-              <a href="#fakelink" class="btn btn-block btn-lg btn-info">View Source</a>
+              <a href="{{project.githubLink}}" class="btn btn-block btn-lg btn-info">View Source</a>
             </p>
             <p>
-              <a href="#fakelink" class="btn btn-block btn-lg btn-primary">Download Game</a>
+              <a href="{{project.downloadLink}}" class="btn btn-block btn-lg btn-primary">Download Game</a>
             </p>
           </aside>
-
-
-
-
-
-          <div class="col-xs-12">
-
-
-            <p class="lead">
-              The theme of our game jam we are working with the Conductive Education Center of Orlando (CECO)
-              Links:
-                Video
-                Github
-                Download
-            </p>
-
-          </div>
-        </div>
+          <p class="lead">
+            {{project.description}}
+          </p>
+        </div> <!-- /team -->
       </div><!-- /.container -->
     </div>
 
@@ -121,6 +100,8 @@
     <script src="js/vendor/video.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/flat-ui-pro.js"></script>
-
+    <!-- Include YT library and this directive -->
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="js/vendor/ytembed.js"></script>
   </body>
 </html>
