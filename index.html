@@ -49,20 +49,26 @@
           </div><!-- /.navbar-collapse -->
         </nav><!-- /navbar -->
         <div class="col-xs-12">
-          <div class="">
+
 
 
           <h1>Game Jam for Cerebral Palsy</h1>
           <p>
             The Gaming Industry recognizes the need to be inclusive of gamers with disabilities and physical and cognitive difficulties. Full Sail is proud to help advance this awareness by working with the Conductive Education Center of Orlando (CECO) to challenge five teams to develop a game within 48 hours targeted at Students at CECO with Cerebral Palsy and other motor disabilities.
           </p>
-          </div>
+          
         </div>
         <div ng-repeat="project in projects" class="col-xs-12" id="{{project.id}}">
 
+          <h3>{{project.projectTitle}}</h3>
           <div class="col-md-8">
-            <h3>{{project.projectTitle}}</h3>
-            <youtube-video width="560" height="315" video-id="project.youTubeID"></youtube-video>
+            <div ng-show="project.youTubeID">
+              <youtube-video width="560" height="315" video-id="project.youTubeID"></youtube-video>
+            </div>
+            <p ng-show="project.screenImg">
+              <img width="560" height="315" src="{{project.screenImg}}" alt="" />
+            </p>
+
             <p class="lead">
               {{project.description}}
             </p>

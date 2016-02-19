@@ -52,7 +52,7 @@ angular.module("jam",['youtube-embed'])
       githubLink: 'https://github.com/bearbos/HoFGameJam.git',
       downloadLink: 'https://drive.google.com/folderview?id=0BzDTL6kkM7d9OWtaRkU5RlVyMVk&usp=sharing_eid&ts=56c48658',
       youTubeID: 'Uwav8iGlmAk',
-      description: 'Cooperative puzzle game meant to be played alone or with a friend, solving puzzles in each world to move your ship to the next one. Each character is controlled by a joystick and have different abilities so they will need to work together to make it through the game. The controller is just two arcade joysticks, nothing else is needed, so CECO will be able to have small kids with all the varying levels of Cerebral Palsy help the small aliens on their earth vacation!',
+      description: '"Word Adventurez" is an educational side scroller adventure game. It is designed around the theme of "It\'s okay to make mistakes." We have incorporated and built a program that is suited and designed around the comfort level of the player. Knowing cerebral palsy affects everyone differently we have allowed the settings and difficulty of the level to be changed to meet the standards of the player. The calibration will represent this theme by allowing to other interact by tilting the tablet or through touch. The large buttons and simple art style will allow an easy visualization and large target for those who have Cerebral Palsy to comprehend and react accordingly to the stimuli. ',
       members: [
         {
           name: 'Vishwajeet Kale',
@@ -124,45 +124,99 @@ angular.module("jam",['youtube-embed'])
 
 
 
-        {
-          id:"yes",
-          teamName: 'Yes, Kurtis',
-          projectTitle: 'Fish Fish',
-          githubLink: 'https://github.com/Masakurt/HoFPublicRepo.git',
-          downloadLink: 'https://drive.google.com/folderview?id=0B3dh_oNafeeHUDlBbnh3MVdYMHc&usp=sharing',
-          youTubeID: '8uVLmeJGwUs',
-          description: 'Cooperative puzzle game meant to be played alone or with a friend, solving puzzles in each world to move your ship to the next one. Each character is controlled by a joystick and have different abilities so they will need to work together to make it through the game. The controller is just two arcade joysticks, nothing else is needed, so CECO will be able to have small kids with all the varying levels of Cerebral Palsy help the small aliens on their earth vacation!',
-          members: [
             {
-              name: 'Brittany Ball',
-              role: 'Game Design'
+              id:"yes",
+              teamName: 'Yes, Kurtis',
+              projectTitle: 'Fish Fish',
+              githubLink: 'https://github.com/Masakurt/HoFPublicRepo.git',
+              downloadLink: 'https://drive.google.com/folderview?id=0B3dh_oNafeeHUDlBbnh3MVdYMHc&usp=sharing',
+              youTubeID: '8uVLmeJGwUs',
+              description: '',
+              members: [
+                {
+                  name: 'Brittany Ball',
+                  role: 'Game Design'
+                },
+                {
+                  name: 'Noel Teros',
+                  role: 'Game Design'
+                },
+                {
+                  name: 'Courtney Stephens',
+                  role: 'Art'
+                },
+                {
+                  name: 'Chase Maldonado',
+                  role: 'Art'
+                },
+                {
+                  name: 'Christine Dietz',
+                  role: 'Sound Design'
+                },
+                {
+                  name: 'Kurtis Vernier',
+                  role: 'Programming'
+                },
+                {
+                  name: 'Ricky Martinez',
+                  role: 'Programming'
+                },
+              ]
             },
-            {
-              name: 'Noel Teros',
-              role: 'Game Design'
-            },
-            {
-              name: 'Courtney Stephens',
-              role: 'Art'
-            },
-            {
-              name: 'Chase Maldonado',
-              role: 'Art'
-            },
-            {
-              name: 'Christine Dietz',
-              role: 'Sound Design'
-            },
-            {
-              name: 'Kurtis Vernier',
-              role: 'Programming'
-            },
-            {
-              name: 'Ricky Martinez',
-              role: 'Programming'
-            },
-          ]
-        }
+
+
+
+      {
+        id:"proj",
+        teamName: 'USOR',
+        projectTitle: 'Operation U.S.O.R',
+        githubLink: 'https://github.com/bjsvochak/hof16.git',
+        downloadLink: '',
+        screenImg:'img/ship.jpg',
+        description: 'Operation U.S.O.R (Unity, Space, Opera, Rail) is a rail based space shooter. The game focuses on ease of use with one button mechanics and the use of VR headsets. The target audience is Gamers with certain disabilities that hinder physical movement and dexterity.',
+        members: [
+          {
+            name: 'Andrew Harvey ',
+            role: 'Game Design'
+          },
+          {
+            name: 'Wei-Wei Lin',
+            role: 'Game Design'
+          },
+          {
+            name: 'Gerard Vega',
+            role: 'Game Dev'
+          },
+          {
+            name: 'Brandon Svochak',
+            role: 'Game Dev'
+          },
+          {
+            name: 'Mike Naulls',
+            role: 'Game Dev'
+          },
+          {
+            name: 'Omar Maldonado',
+            role: 'Audio'
+          },
+          {
+            name: 'Zefang lin',
+            role: 'Game Art'
+          },
+          {
+            name: 'Jose Castillo',
+            role: 'Game Art'
+          },
+          {
+            name: 'Levi Eads',
+            role: 'Game Art'
+          },
+          {
+            name: 'Steven Durr',
+            role: 'Game Art'
+          },
+        ]
+      }
   ];
 
 
