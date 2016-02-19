@@ -59,15 +59,18 @@
           </div>
         </div>
         <div ng-repeat="project in projects" class="col-xs-12" id="{{project.id}}">
-          <h3>{{project.projectTitle}} - </h3>
-          <div class="col-md-8">
-            <youtube-video width="560" height="315" video-id="project.youTubeID"></youtube-video>
 
+          <div class="col-md-8">
+            <h3>{{project.projectTitle}}</h3>
+            <youtube-video width="560" height="315" video-id="project.youTubeID"></youtube-video>
+            <p class="lead">
+              {{project.description}}
+            </p>
           </div>
           <aside class="col-md-4">
             <div class="todo">
               <div class="todo-search" style="">
-              Team {{project.teamName}}
+              Team: {{project.teamName}}
               </div>
               <ul>
                 <li ng-repeat="member in project.members">
@@ -87,10 +90,8 @@
             <p>
               <a href="{{project.downloadLink}}" class="btn btn-block btn-lg btn-primary">Download Game</a>
             </p>
-          </aside> 
-          <p class="lead">
-            {{project.description}}
-          </p>
+          </aside>
+
         </div> <!-- /team -->
       </div><!-- /.container -->
     </div>
