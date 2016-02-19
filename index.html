@@ -61,7 +61,7 @@
         <div ng-repeat="project in projects" class="col-xs-12" id="{{project.id}}">
 
           <h3>{{project.projectTitle}}</h3>
-          <div class="col-md-8">
+          <div class="col-xs-8">
             <div ng-show="project.youTubeID">
               <youtube-video width="560" height="315" video-id="project.youTubeID"></youtube-video>
             </div>
@@ -73,7 +73,7 @@
               {{project.description}}
             </p>
           </div>
-          <aside class="col-md-4">
+          <aside class="col-xs-4">
             <div class="todo">
               <div class="todo-search" style="">
               Team: {{project.teamName}}
