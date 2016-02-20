@@ -171,7 +171,7 @@ angular.module("jam",['youtube-embed'])
         teamName: 'USOR',
         projectTitle: 'Operation U.S.O.R',
         githubLink: 'https://github.com/bjsvochak/hof16.git',
-        downloadLink: '',
+        downloadLink: 'https://drive.google.com/file/d/0B1Jwrx7FeCR0Vld2WDhkNUE2Mnc/view?usp=sharing',
         screenImg:'img/ship.jpg',
         description: 'Operation U.S.O.R (Unity, Space, Opera, Rail) is a rail based space shooter. The game focuses on ease of use with one button mechanics and the use of VR headsets. The target audience is Gamers with certain disabilities that hinder physical movement and dexterity.',
         members: [
