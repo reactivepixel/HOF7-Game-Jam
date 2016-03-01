@@ -46,30 +46,28 @@ angular.module("jam", ['youtube-embed'])
         youTubeID: 'Uwav8iGlmAk',
         description: '"Word Adventurez" is an educational side scroller adventure game. It is designed around the theme of "It\'s okay to make mistakes." We have incorporated and built a program that is suited and designed around the comfort level of the player. Knowing cerebral palsy affects everyone differently we have allowed the settings and difficulty of the level to be changed to meet the standards of the player. The calibration will represent this theme by allowing to other interact by tilting the tablet or through touch. The large buttons and simple art style will allow an easy visualization and large target for those who have Cerebral Palsy to comprehend and react accordingly to the stimuli. ',
         members: [{
-          name: 'Vishwajeet Kale',
-          role: 'Level Layouts/Presentation'
+          name: 'Jonathan Long',
+          role: 'Programmer'
         }, {
-          name: 'Lexie Rood',
-          role: 'Level Layouts/Presentation'
+          name: 'Phillip Simpson',
+          role: 'Programmer'
         }, {
-          name: 'Rusty Swain',
-          role: 'Unity Gameplay Programming'
+          name: 'Blaine Sprague',
+          role: 'Programmer'
         }, {
-          name: 'TJay Cargle',
-          role: 'Unity UI Programming'
+          name: 'Austen Seeberg',
+          role: 'Artist'
         }, {
-          name: 'Nicolas Riley',
-          role: 'Level and Character Assets/Textures/Level and Character Designs'
+          name: 'Gilberto Vacelle',
+          role: 'Artist'
         }, {
-          name: 'Khoa Phan',
-          role: 'Level Assets/Materials/Level Designs'
+          name: 'Frank Ruiz',
+          role: 'Audio Engineer'
         }, {
-          name: 'John Hughes',
-          role: 'Music and Sound Design'
+          name: 'Elliot Battle',
+          role: 'Designer'
         }, ]
       },
-
-
       {
         id: "left",
         teamName: 'Leftovers',
